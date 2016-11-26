@@ -6,14 +6,14 @@ color c2 = color(100, 100, 100);
 //mouse press fill color
 color c3 = color(255, 255, 255);
 //connector stroke color
-color c4 = color(255, 0, 0);
+color c4 = color(90, 190, 255);
 
 //easing
 float x;
 float y;
 float px;
 float py;
-float easing = 0.1;
+float easing = 0.2;
 
 
 //setup - background color
@@ -59,6 +59,6 @@ void draw() {
 }
 
 //clear canvas
-//void keyPressed() {
-  //background(c1);
-//}
+void keyPressed() {
+  background(c1);
+}

@@ -45,8 +45,10 @@ void draw() {
     fill(c3, 10);
   }
 
-  triangle(0, 0, x, y, 900, 600);
-  triangle(900, 0, x, y, 0, 600);
+  triangle(0, 0, x, y, 450, 300);
+  triangle(900, 0, x, y, 450, 300);
+  triangle(900, 600, x, y, 450, 300);
+  triangle(0, 600, x, y, 450, 300);
 
   //connector line
   stroke(c4, 100);
@@ -59,6 +61,6 @@ void draw() {
 }
 
 //clear canvas
-//void keyPressed() {
-  //background(c1);
-//}
+void keyPressed() {
+  background(c1);
+}
