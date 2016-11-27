@@ -46,10 +46,14 @@ void draw() {
     //noFill();
     stroke(c2, 50);
     strokeWeight(1);
-    triangle(350, 200, x, y, 850, 700);
-    triangle(850, 200, x, y, 350, 700);
-    //triangle(900, 600, x, y, 150, 150);
-    //triangle(0, 600, x, y, 750, 150);
+    //interior triangles with square
+    //triangle(350, 200, x, y, 850, 700);
+    //triangle(850, 200, x, y, 350, 700);
+    //four corners triangles
+    triangle(0, 0, x, y, 950, 650);
+    triangle(1200, 0, x, y, 250, 650);
+    triangle(1200, 900, x, y, 250, 250);
+    triangle(0, 900, x, y, 950, 250);
 
 
     //connector line
