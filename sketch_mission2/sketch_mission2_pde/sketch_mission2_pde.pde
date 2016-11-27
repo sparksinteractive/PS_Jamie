@@ -18,7 +18,7 @@ float easing = 0.1;
 
 //setup - background color
 void setup() {
-  size (900, 600);
+  size (1200, 900);
   background (c1);
 }
 
@@ -46,10 +46,10 @@ void draw() {
     //noFill();
     stroke(c2, 50);
     strokeWeight(1);
-    triangle(0, 0, x, y, 750, 450);
-    triangle(900, 0, x, y, 150, 450);
-    triangle(900, 600, x, y, 150, 150);
-    triangle(0, 600, x, y, 750, 150);
+    triangle(350, 200, x, y, 850, 700);
+    triangle(850, 200, x, y, 350, 700);
+    //triangle(900, 600, x, y, 150, 150);
+    //triangle(0, 600, x, y, 750, 150);
 
 
     //connector line
@@ -61,7 +61,20 @@ void draw() {
   }
 }
 
-//clear canvas
+int number = 1;
+
+//key commands
 void keyPressed() {
+  //clear canvas
+if (key == ' '){
   background(c1);
+}
+//save farm
+  if(key == 's'){
+    println("Saving...");
+    String s = "screen" + nf(number,4) +".jpg";
+    save(s);
+    number++;
+    println("Done saving.");
+  }
 }
