@@ -1,3 +1,5 @@
+//Triangulated Responses
+
 //colors
 //background color
 color c1 = color(100, 100, 100);
