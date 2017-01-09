@@ -43,10 +43,11 @@ translate (width/2, height/2);
     noStroke();
     fill(c3, 10);
   }
+
   //rotate(angle);
   for (int i=0; i< 360; i+=10) {
   triangle(0, -300, mouseX, mouseY, 0, 300);
-  //triangle(0, 600, mouseX, mouseY, 900, 0);
+  //triangle(0, -600, mouseX, mouseY, +600, 0);
  //angle +=10;
  rotate(radians(i));
 
